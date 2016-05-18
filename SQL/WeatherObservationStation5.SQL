@@ -1,0 +1,2 @@
+SELECT * FROM (SELECT CITY, length(CITY) FROM STATION order by length(CITY) asc, CITY asc) WHERE ROWNUM=1;
+SELECT * FROM (SELECT CITY, length(CITY) FROM STATION order by length(CITY) desc, CITY asc) WHERE ROWNUM=1;
